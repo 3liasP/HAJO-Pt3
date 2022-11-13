@@ -23,8 +23,8 @@ public class Client {
             if (s.isConnected()) {
                 System.out.println("Yhdistetty!");
             }
-            String greeting = "Terve, palvelin!";
-            outputStream.write(greeting.getBytes());
+            String g = "Terve, palvelin!";
+            outputStream.write(g.getBytes());
             outputStream.flush();
             System.out.println("Lähetetty!");
         } catch (IOException e) {

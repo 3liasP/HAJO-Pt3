@@ -25,8 +25,8 @@ public class Server {
             if(s.isConnected()) {
                 System.out.println("Yhdistetty!");
             }
-            String greeting = new String(inputStream.readAllBytes());
-            System.out.println(greeting);
+            String g = new String(inputStream.readAllBytes());
+            System.out.println(g);
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
