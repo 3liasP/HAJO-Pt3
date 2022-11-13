@@ -5,12 +5,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /*
-* Kirjoita Server-luokkaan TCP-soketteihin pohjautuva
-* palvelinohjelma, joka odottaa asiakkaan yhdistämistä.
-* 
-* Aseta palvelin kuuntelemaan yhteydenottopyyntöjä
-* vapaavalintaisessa TCP-portissa.
-*/
+ * Kirjoita Server-luokkaan TCP-soketteihin pohjautuva
+ * palvelinohjelma, joka odottaa asiakkaan yhdistämistä.
+ * 
+ * Aseta palvelin kuuntelemaan yhteydenottopyyntöjä
+ * vapaavalintaisessa TCP-portissa.
+ */
 
 public class Server {
 

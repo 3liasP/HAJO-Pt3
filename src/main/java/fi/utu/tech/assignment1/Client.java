@@ -5,11 +5,11 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /*
-* Toteuta Client-luokkaan asiakasohjelma,
-* joka pystyy yhdistämään Server-luokan palvelimeen.
-* Voit yhdistäessä käyttää takaisinkytkentäosoitetta
-* ("loopback", 127.0.0.1).
-*/
+ * Toteuta Client-luokkaan asiakasohjelma,
+ * joka pystyy yhdistämään Server-luokan palvelimeen.
+ * Voit yhdistäessä käyttää takaisinkytkentäosoitetta
+ * ("loopback", 127.0.0.1).
+ */
 
 public class Client {
     // avaa takaisinkytkentäosoitteeseen
