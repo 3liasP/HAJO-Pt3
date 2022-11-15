@@ -15,18 +15,18 @@ public class Client {
     public static void main(String[] args) {
         try (Socket s = new Socket(InetAddress.getByName(null), 12346);
             PrintWriter w = new PrintWriter(s.getOutputStream(), true)){
-            Random r = new Random();
+            Random rand = new Random();
             if (s.isConnected()) {
                 System.out.println("Yhdistetty!");
             }
             while (true) {
                 String cmd = "LIGHT;";
-                switch (r.nextInt(3)) {
+                switch (rand.nextInt(3)) {
                 case 0: // ON
-                    cmd = cmd.concat("ON;" + Integer.toString(r.nextInt(5)));
+                    cmd = cmd.concat("ON;" + Integer.toString(rand.nextInt(5)));
                     break;
                 case 1: // OFF
-                    cmd = cmd.concat("OFF;" + Integer.toString(r.nextInt(5)));
+                    cmd = cmd.concat("OFF;" + Integer.toString(rand.nextInt(5)));
                     break;
                 case 2: // QUERY
                     cmd = cmd.concat("QUERY");
